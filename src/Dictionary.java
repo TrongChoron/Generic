@@ -37,13 +37,13 @@ public class Dictionary<K,V> {
 
 // Tạo một class để thực hiện các Examples
 class DictionaryExercise{
-    public static void Exercise(){
+    public static void exercise(){
         // Vì K và V được gọi là một kiểu tham số chiếu nào đó của Class Dictionary<K,V>
         // Nên khi sử dụng class này ta phải xác định một kiểu tham số cụ thể
         // Ở đây là String và String
-        Dictionary<String, String> obj1 = new Dictionary<>("Learn","hoc");
-        String eng = obj1.getKey();
-        String vietnamese = obj1.getValue();
+        Dictionary<String, String> dictionary = new Dictionary<>("Learn","hoc");
+        String eng = dictionary.getKey();
+        String vietnamese = dictionary.getValue();
         System.out.println(eng +": "+vietnamese);
     }
 }
